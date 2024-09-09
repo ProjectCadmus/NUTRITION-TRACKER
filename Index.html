@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy, Protein, Carbohydrate, and Fat Level Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nutritional Breakdown: Calorie, Protein, Carbohydrate, and Fat Comparisons of Common Foods</h1>
+
+        <!-- Form for comparing energy, protein, carbohydrate and fat levels -->
+        <form id="compareForm">
+            <label for="food1">Enter the first food item:</label>
+            <input type="text" id="food1" required>
+            <label for="food2">Enter the second food item:</label>
+            <input type="text" id="food2" required>
+            <label for="food3">Enter the third food item:</label>
+            <input type="text" id="food3" required>
+            <label for="food4">Enter the fourth food item:</label>
+            <input type="text" id="food4" required>
+            <button type="submit">Compare</button>
+        </form>
+
+        <h2>Calorie Comparison</h2>
+        <canvas id="calorieChart"></canvas>
+
+        <h2>Protein Comparison</h2>
+        <canvas id="proteinChart"></canvas>
+
+        <h2>Carbohydrate Comparison</h2>
+        <canvas id="carbohydrateChart"></canvas>
+
+        <h2>Fat Comparison</h2>
+        <canvas id="fatChart"></canvas>
+    </div>
+</body>
+</html>
